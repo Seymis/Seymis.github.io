@@ -1,11 +1,8 @@
-body, html {
-    height: 100%;
-}
 
 /* put banner image */
 .hero-image {
-    background-image: url|none|initial|inherit;
-    linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-image: url("");
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
     height: 50%;
 }
 
@@ -40,4 +37,55 @@ body, html {
     width: 50%;
     text-align: center;
     border: 3px solid green;
+    justify-items:center;
   }
+
+  /* image gallery */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+   
+   /*
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 48%;
+    justify-content:center ;
+    align-items: center;
+}
+
+.column img {
+    width: 100%;
+    
+    height: auto;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.column img:hover {
+    transform: scale(1.05);
+}
+  

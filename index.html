@@ -1,4 +1,6 @@
 <html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
     body {
@@ -9,7 +11,7 @@
     .hero-image {
       background-image: url("https://site-547756.mozfiles.com/files/547756/medium/Swamp_Wetland.jpg");
       background-color: #cccccc;
-      height: 500px;
+      height: 75%;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -24,20 +26,33 @@
       transform: translate(-50%, -50%);
       color: white;
     }
+    
+    p {outline-color:red;}
+    p.dotted {outline-style: dotted;}
+    p.dashed {outline-style: dashed;}
+    p.solid {outline-style: solid;}
+    p.double {outline-style: double;}
+    p.groove {outline-style: groove;}
+    p.ridge {outline-style: ridge;}
+    p.inset {outline-style: inset;}
+    p.outset {outline-style: outset;}
     </style>
     </head>
     <body>
     
     <div class="hero-image">
       <div class="hero-text">
-        <h1 style="font-size:50px">I am Jane Doe</h1>
-        <h3>And I'm a Photographer</h3>
-        <button>Hire me</button>
+        <h1 style="font-size:50px">Sasha's Page</h1>
+        <h3>Check out my work</h3>
+        <button><a href="fieldguide.html">Royal Park</a> </button>
       </div>
     </div>
-    
-    <p>Page content..</p>
-    <p>Note that this technique will also make the image responsive: Resize the browser window to see the effect.</p>
-    
+
+    <div class="center">
+      <centre>
+      <p class="outset"> Page content..</p>
+      <p>Note that this technique will also make the image responsive: Resize the browser window to see the effect.</p>
+      </centre>
+     </div>
     </body>
 </html>

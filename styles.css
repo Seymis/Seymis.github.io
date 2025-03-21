@@ -1,1 +1,41 @@
-background-image: url|none|initial|inherit;
+body, html {
+    height: 100%;
+}
+
+/* put banner image */
+.hero-image {
+    background-image: url|none|initial|inherit;
+    linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    height: 50%;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  /* outline styles */
+  p.dotted {outline-style: dotted;}
+  p.dashed {outline-style: dashed;}
+  p.solid {outline-style: solid;}
+  p.double {outline-style: double;}
+  p.groove {outline-style: groove;}
+  p.ridge {outline-style: ridge;}
+  p.inset {outline-style: inset;}
+  p.outset {outline-style: outset;}
+
+p{
+    outline-style: dotted;
+}
+
+  .center {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    border: 3px solid green;
+  }

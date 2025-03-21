@@ -34,10 +34,10 @@
 
 .center {
     margin: auto;
-    width: 50%;
+    width: 90%;
     text-align: center;
     border: 3px solid green;
-    justify-items:center;
+    justify-items: center;
   }
 
   /* image gallery */

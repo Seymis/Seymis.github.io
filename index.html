@@ -1,23 +1,43 @@
 <html>
-    <style>    .hero-image {
-        background-image: url("https://site-547756.mozfiles.com/files/547756/medium/Swamp_Wetland.jpg"); /* The image used */
-        background-color: #cccccc; /* Used if the image is unavailable */
-        height: cover; /* You must set a specified height */
-        background-position: center; /* Center the image */
-        background-repeat: no-repeat; /* Do not repeat the image */
-        background-size: cover; /* Resize the background image to cover the entire container */
-      }
-      </style>
-
-    <h1>Home Page</h1>
-    <p>Hello!!!</p>
-
-</br>
-<body>
-    <div class="container">
-        <a href="https://seymis.github.io/field-guide" class="button circle">Royal Park Field Guide</a>
-        <a href="https://seymis.github.io/portfolio" class="button circle">Portfolio</a>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .hero-image {
+      background-image: url("/w3images/photographer.jpg");
+      background-color: #cccccc;
+      height: 500px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+    
+    .hero-text {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1 style="font-size:50px">I am Jane Doe</h1>
+        <h3>And I'm a Photographer</h3>
+        <button>Hire me</button>
+      </div>
     </div>
-</body>
-
+    
+    <p>Page content..</p>
+    <p>Note that this technique will also make the image responsive: Resize the browser window to see the effect.</p>
+    
+    </body>
 </html>

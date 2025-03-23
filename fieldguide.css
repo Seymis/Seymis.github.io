@@ -1,3 +1,5 @@
+@font-face { font-family: Roboto; src: url(Roboto-VariableFont_wdth,wght.ttf); } 
+
 /* General Resets */
 * {
     margin: 0;
@@ -6,7 +8,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Roboto, sans-serif;
 }
 
 .center {

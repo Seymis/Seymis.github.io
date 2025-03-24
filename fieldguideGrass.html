@@ -62,6 +62,69 @@
         </div>
     </section>
 
+<!-- Three Boxes -->
+  <!-- The grid: three columns -->
+  <div class="row">
+    <div class="column" onclick="openTab('b1');" style="background:rgb(173, 175, 173);">Species</div>
+    <div class="column" onclick="openTab('b2');" style="background:rgb(159, 161, 160);">Indigenous Uses</div>
+    <div class="column" onclick="openTab('b3');" style="background:rgb(90, 88, 88);">Modern Days</div>
+  </div>
+  
+  <!-- The expanding grid (hidden by default) -->
+  <div id="b1" class="containerTab" style="display:none;background:rgb(173, 175, 173)">
+    <!-- If you want the ability to close the container, add a close button -->
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+    <h2> There were many indigenous species of grass and wildflowers</h2>     
+        <p>- Kangaroo grass  </p>
+        <p>- Red leg grass  </p>
+        <p>- Silky Blue Grass  </p>
+        <p>- Windmill Grass  </p>
+        <p>- Weeping Grass  </p>
+        <p>- Wallaby Grass  </p>
+        <p>- Spear Grass </p>
+  </div>
+  
+  <div id="b2" class="containerTab" style="display:none;background:rgb(159, 161, 160);">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+    <h2>What were the indigenous uses of native grass? </h2>
+        <p>- The Aborigines ate the green parts of the grass alongside other foragables such as nuts and gum. </p>
+        <p>- To start fires </p>
+  </div>
+  
+  <div id="b3" class="containerTab" style="display:none;background:rgb(90, 88, 88)">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+    <h2>What are the benefits of grass in Royal Park today? </h2>
+    <p>Now in 2025, visitors to Royal Park can feel a breath of fresh air and enjoy recreational activities around the area. The park is laden with many species of grass mix to support a variety of activities which are not limited to: </p>
+<ul>
+    <p> - Provides a large grass for meeting points, sports activities; open spaces for recreational activities </p> 
+<li>    Picnic and barbecue  </li>
+<li>    Native gardens </li>
+<li>    Golf course </li>
+<li>    Sports Grounds </li>
+<li>    Also photosynthesises and filters air </li>
+<p> - Supports the wildlife of Royal Park </p>
+<li>    Bush sites </li>
+<li>     Provides food for the animals such as the wetlands </li>
+<li>    Animals may eat this grass rather than imported grasses due to diet </li>
+<p> - A method of conservation </p>
+<li>    Without proper control, imported grasses such as the many grass types in the CBD are from Africa </li>
+<p> - A cultural significance, especially to the Aborigines </p>
+<li>    They would walk a certain as walking carelessly would trample on grass that were used </li>
+</ul>
+</div> 
+
+  <script>
+    // Hide all elements with class="containerTab", except for the one that matches the clickable grid column
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+} 
+  </script>
+
     <!-- Footer -->
     <footer>
         <p></p>

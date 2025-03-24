@@ -11,6 +11,10 @@ body {
     font-family: Roboto, sans-serif;
 }
 
+p { 
+    text-indent: 30px;
+ }
+
 .center {
     display: block;
     margin-left: auto;
@@ -144,7 +148,6 @@ footer p {
  .column {
     float: left;
     padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
   }
   
   .left, .right {

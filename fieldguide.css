@@ -182,3 +182,13 @@ footer p {
     float: left;
     width: 33.33%;
   }
+  
+  img {  
+    transition: transform 0.25s ease;
+    cursor: zoom-in;
+  }
+  
+  
+  img.zoomed {
+    cursor: zoom-out;
+  }

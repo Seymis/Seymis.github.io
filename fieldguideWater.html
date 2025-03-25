@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div.a {
+          text-align: center;
+        }
+        </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Field Guide</title>
+    <link rel="stylesheet" href="fieldguide.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="fieldguide.html">Home</a></li>
+                <li><a href="#">Water</a></li>
+                <li><a href="#">Grass</a></li>
+                <li><a href="#">Trees</a></li>
+                <li><a href="fieldguideRef.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+</br>
+
+<body>
+    <div class="a">
+        <h1>Royal Park Field Guide</h1>
+        <p>Assignment 01 for Layering Realities (Dirt Lab).</p>
+        <p>Photos taken from 07/03/2025 to 22/03/2025.</p>
+        </div>
+</body>
+</br>
+<!-- Three Boxes -->
+  <!-- The grid: three columns -->
+  <div class="row">
+    <div class="column" onclick="openTab('b1');" style="background:rgb(173, 175, 173);">Species</div>
+    <div class="column" onclick="openTab('b2');" style="background:rgb(159, 161, 160);">Indigenous Uses</div>
+    <div class="column" onclick="openTab('b3');" style="background:rgb(90, 88, 88);">Modern Days</div>
+  </div>
+  
+  <!-- The expanding grid (hidden by default) -->
+  <div id="b1" class="containerTab" style="display:none;background:rgb(173, 175, 173)">
+    <!-- If you want the ability to close the container, add a close button -->
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+    <h2> There were many indigenous species of grass and wildflowers</h2>     
+        <p>- Kangaroo grass  </p>
+        <p>- Red leg grass  </p>
+        <p>- Silky Blue Grass  </p>
+        <p>- Windmill Grass  </p>
+        <p>- Weeping Grass  </p>
+        <p>- Wallaby Grass  </p>
+        <p>- Spear Grass </p>
+  </div>
+  
+  <div id="b2" class="containerTab" style="display:none;background:rgb(159, 161, 160);">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+    <h2>What were the indigenous uses of native grass? </h2>
+        <p>- The Aborigines ate the green parts of the grass alongside other foragables such as nuts and gum. </p>
+        <p>- To start fires </p>
+  </div>
+  
+  <div id="b3" class="containerTab" style="display:none;background:rgb(90, 88, 88)">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+    <h2>What are the benefits of grass in Royal Park today? </h2>
+    <p>Now in 2025, visitors to Royal Park can feel a breath of fresh air and enjoy recreational activities around the area. The park is laden with many species of grass mix to support a variety of activities which are not limited to: </p>
+    <h3> - Provides a large grass for meeting points, sports activities; open spaces for recreational activities </h3> 
+<p>    Picnic and barbecue  </p>
+<p>    Native gardens </p>
+<p>    Golf course </p>
+<p>    Sports Grounds </p>
+<p>    Also photosynthesises and filters air </p>
+<h3> - Supports the wildlife of Royal Park </h3>
+<p>    Bush sites </p>
+<p>     Provides food for the animals such as the wetlands </p>
+<p>    Animals may eat this grass rather than imported grasses due to diet </p>
+<h3> - A method of conservation </h3>
+<p>    Without proper control, imported grasses such as the many grass types in the CBD are from Africa </p>
+<h3> - A cultural significance, especially to the Aborigines </h3>
+<p>    They would walk a certain as walking carelessly would trample on grass that were used </p>
+</div> 
+</br>
+    <!-- Collection Grid -->
+    <img src="Grass\IMG_20250314_102848678_HDR.jpg" alt="Paris" class="center"> 
+</br>
+
+    <!-- Instagram Grid Section -->
+    <section class="instagram-grid">
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="Grass\01 Grass.jpg" alt="Image 1">
+            </div>
+            <div class="grid-item">
+                <img src="Grass\02 Grass.jpg" alt="Image 2">
+            </div>
+            <div class="grid-item">
+                <img src="Grass\IMG_20250314_111234814_HDR.jpg" alt="Image 3">
+            </div>
+            <div class="grid-item">
+                <img src="Grass\IMG_20250314_104732473_HDR.jpg" alt="Image 4">
+            </div>
+            <div class="grid-item">
+                <img src="Grass\IMG_20250314_111306204_HDR.jpg" alt="Image 5">
+            </div>
+            <div class="grid-item">
+                <img src="Grass\IMG_20250314_122822074_HDR.jpg" alt="Image 6">
+            </div>
+        </div>
+    </section>
+
+  <script>
+    // Hide all elements with class="containerTab", except for the one that matches the clickable grid column
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+} 
+  </script>
+
+    <!-- Footer -->
+    <footer>
+        <p></p>
+    </footer>
+
+</body>
+</html>

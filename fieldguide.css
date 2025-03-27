@@ -189,33 +189,3 @@ footer p {
     list-style-position: inside;
 }
 
-/* masonry grid photo layout */
-.masonry-grid {
-    display: grid;
-    grid-template-columns: repeat(4, auto); /* Ensures 4 columns, each column takes the width of the largest image */
-    gap: 16px;
-    padding: 10px;
-    align-items: start; /* Ensures items start at the top of their columns */
-    width: 90%; /* Optional: Limits the grid width */
-    max-width: 1200px; /* Optional: Ensures the grid doesn't get too wide on large screens */
-  }
-  
-  /* Masonry Item Styling */
-  .masonry-item {
-    position: relative;
-    width: 100%;
-  }
-  
-  .masonry-item img {
-    width: 100%; /* Makes sure image fills its container */
-    height: auto; /* Ensures the image maintains its original aspect ratio */
-    object-fit: contain; /* Ensures images are not cropped and maintain original aspect ratio */
-    border-radius: 8px;
-    display: block;
-  }
-  
-  /* Hover effect */
-  .masonry-item img:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-  }
